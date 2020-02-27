@@ -1,0 +1,606 @@
+@media screen and (max-width: 767px) {
+  #back-top {
+    display: none;
+  }
+  header {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    background-color: rgba(0, 0, 0, 0.3);
+    transition: all 0.5s ;
+  }
+  header iframe {
+    max-width: 100%;
+  }
+  header .main-title {
+    font-family: 'Open Sans', Roboto;
+    font-weight: 900;
+    color: white;
+    text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    position: absolute;
+    z-index: 100;
+    width: 100%;
+    left: 0;
+  }
+  header .h1-1 {
+    font-size: 42px;
+    top: 100px;
+  }
+  header .h1-2 {
+    font-size: 30px;
+    top: 140px;
+  }
+  header .sub-title {
+    padding: 0 50px;
+    font-size: 12px;
+    top: 190px;
+  }
+  header nav {
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 100%;
+    overflow: auto;
+    position: relative;
+    padding: 10px;
+    margin: none;
+  }
+  header nav #logo {
+    display: none;
+  }
+  header nav #mode-btn {
+    display: none;
+    /*
+				background-color:rgba(0,0,0,0.2);
+				height:40px;
+				float:left;
+				margin-right:0;
+				border-radius:20px;
+				border:solid 2px white;
+				span{
+					font-family:sans-serif;
+					margin:0;
+					padding:0 10px;
+					display:inline-block;
+					line-height: 36px;
+					cursor:pointer;
+				}
+				#video-mode{
+					background-color:white;
+					margin-right:-2px;
+					border-radius:16px 0 0 16px;
+				}
+				#music-mode{
+					transition:all 0.3s;
+					border-radius:0 16px 16px 0;
+					margin-left:-2px;
+					cursor:pointer;
+					color:#777;
+					&:hover{
+						color:white;
+					}
+				}
+				*/
+  }
+  header nav ul {
+    overflow: auto;
+    float: none;
+  }
+  header nav ul li {
+    float: none;
+    margin: 0 2px;
+  }
+  header nav ul li #search-div input {
+    width: 80%;
+    font-size: 14px;
+  }
+  header nav ul li #search-div input:focus {
+    outline: none;
+  }
+  main {
+    width: 100%;
+  }
+  main #now-playing {
+    font-size: 16px;
+    font-weight: 100;
+    margin: 0;
+    padding: 10px;
+    width: 100%;
+  }
+  main #search-result-info {
+    font-size: 13px;
+    margin: 5px 0 10px 0;
+    padding: 0 10px;
+    width: 100%;
+  }
+  main #search-result-info #search-word,
+  main #search-result-info #total-result,
+  main #search-result-info #total-pages {
+    font-size: 14px;
+  }
+  main section {
+    overflow: auto;
+    margin: 0 auto 50px auto;
+    padding: 0;
+    width: 100%;
+  }
+  main section .error-found,
+  main section .fail {
+    color: #777;
+    font-size: 20px;
+    font-weight: 900;
+  }
+  main section .card {
+    position: relative;
+    float: none;
+    width: 100%;
+    height: 90px;
+    margin: 10px 0;
+  }
+  main section .card .img-container {
+    display: inline-block;
+    position: relative;
+    width: 35%;
+    height: 100%;
+    margin: 0;
+  }
+  main section .card .img-container img {
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+  }
+  main section .card .img-container .duration {
+    font-size: 13px;
+    padding: 2px;
+  }
+  main section .card .info-container {
+    display: inline-block;
+    position: relative;
+    float: right;
+    width: 65%;
+    height: 100%;
+    background-color: white;
+  }
+  main section .card .info-container span {
+    font-size: 14px;
+    padding: 0 4px;
+  }
+  main section .card .info-container .video-title {
+    height: 50px;
+    padding-top: 0px;
+    overflow: hidden;
+  }
+  main section .card .info-container .channel-title {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-size: 12px;
+    width: 120px;
+  }
+  main .local-search-loader {
+    height: 100px;
+  }
+  footer {
+    position: relative;
+    width: 100%;
+    height: 600px;
+  }
+  footer .footer-logo {
+    position: absolute;
+    z-index: 100;
+    top: 20px;
+    left: 20px;
+    padding: 20px 10px;
+  }
+  footer .footer-p {
+    width: 185px;
+    top: 100px;
+    left: 20px;
+  }
+  footer .footer-outer-ul {
+    position: absolute;
+    z-index: 100;
+    top: 260px;
+    left: 20px;
+    list-style-type: none;
+    text-decoration: none;
+  }
+  footer .footer-outer-ul > li {
+    float: none;
+    width: 200px;
+    margin: 0 0 20px 0;
+    text-decoration: none;
+  }
+  footer .footer-outer-ul > li .footer-inner-ul {
+    list-style-type: none;
+  }
+  footer .footer-outer-ul > li .footer-inner-ul li {
+    padding-bottom: 5px;
+    color: white;
+    font-size: 18px;
+    font-weight: 100;
+  }
+  footer .footer-outer-ul > li .footer-inner-ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+  }
+  footer .footer-outer-ul > li .footer-inner-ul li a:hover {
+    text-decoration: underline;
+  }
+  footer .footer-outer-ul > li .footer-inner-ul .li-title {
+    color: white;
+    font-size: 20px;
+    font-weight: 900;
+    text-shadow: 1px 1px 1px #aaa;
+    padding-bottom: 15px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  #back-top {
+    display: none;
+  }
+  header {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    background-color: rgba(0, 0, 0, 0.3);
+    transition: all 0.5s ;
+  }
+  header iframe {
+    max-width: 100%;
+  }
+  header .main-title {
+    font-family: 'Open Sans', Roboto;
+    font-weight: 900;
+    color: white;
+    text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    position: absolute;
+    z-index: 100;
+    width: 100%;
+    left: 0;
+  }
+  header .h1-1 {
+    font-size: 60px;
+    top: 100px;
+  }
+  header .h1-2 {
+    font-size: 42px;
+    top: 156px;
+  }
+  header .sub-title {
+    font-size: 14px;
+    top: 220px;
+  }
+  header nav {
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 100%;
+    overflow: auto;
+    position: relative;
+    padding: 10px;
+    margin: none;
+  }
+  header nav #logo {
+    display: none;
+    top: 10px;
+    left: 10px;
+    font-size: 20px;
+    height: 40px;
+    line-height: 40px;
+  }
+  header nav #mode-btn {
+    float: left;
+    margin-right: 0;
+    /*
+				background-color:rgba(0,0,0,0.2);
+				display:inline-block;
+				height:40px;
+				border-radius:20px;
+				border:solid 2px white;
+				span{
+					font-family:sans-serif;
+					margin:0;
+					padding:0 10px;
+					display:inline-block;
+					line-height: 36px;
+					cursor:pointer;
+				}
+				#video-mode{
+					background-color:white;
+					margin-right:-2px;
+					border-radius:16px 0 0 16px;
+				}
+				#music-mode{
+					transition:all 0.3s;
+					border-radius:0 16px 16px 0;
+					margin-left:-2px;
+					cursor:pointer;
+					color:#777;
+					&:hover{
+						color:white;
+					}
+				}
+				*/
+  }
+  header nav ul {
+    overflow: auto;
+    display: block;
+    width: 66%;
+    float: right;
+  }
+  header nav ul li {
+    float: none;
+  }
+  header nav ul li #search-div input {
+    width: 80%;
+    font-size: 16px;
+  }
+  main {
+    width: 100%;
+  }
+  main #now-playing {
+    font-size: 20px;
+    font-weight: 100;
+    margin: 20px auto;
+    padding: 0 10px;
+    width: 720px;
+  }
+  main #search-result-info {
+    font-size: 14px;
+    margin: 20px auto 0px auto;
+    padding: 0 10px;
+    width: 720px;
+  }
+  main #search-result-info #search-word,
+  main #search-result-info #total-result,
+  main #search-result-info #total-pages {
+    font-size: 16px;
+  }
+  main section {
+    width: 720px;
+  }
+  footer {
+    position: relative;
+    width: 100%;
+    height: 600px;
+  }
+  footer .footer-logo {
+    position: absolute;
+    z-index: 100;
+    top: 20px;
+    left: 20px;
+    padding: 20px 10px;
+  }
+  footer .footer-p {
+    width: 185px;
+    top: 100px;
+    left: 20px;
+  }
+  footer .footer-outer-ul {
+    position: absolute;
+    z-index: 100;
+    top: 260px;
+    left: 20px;
+    list-style-type: none;
+    text-decoration: none;
+  }
+  footer .footer-outer-ul > li {
+    float: none;
+    width: 260px;
+    margin: 0 0 20px 0;
+    text-decoration: none;
+  }
+  footer .footer-outer-ul > li .footer-inner-ul {
+    list-style-type: none;
+  }
+  footer .footer-outer-ul > li .footer-inner-ul li {
+    padding-bottom: 5px;
+    color: white;
+    font-size: 18px;
+    font-weight: 100;
+  }
+  footer .footer-outer-ul > li .footer-inner-ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+  }
+  footer .footer-outer-ul > li .footer-inner-ul li a:hover {
+    text-decoration: underline;
+  }
+  footer .footer-outer-ul > li .footer-inner-ul .li-title {
+    color: white;
+    font-size: 20px;
+    font-weight: 900;
+    text-shadow: 1px 1px 1px #aaa;
+    padding-bottom: 15px;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1200px) {
+  #back-top {
+    display: none;
+  }
+  header {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    background-color: rgba(0, 0, 0, 0.3);
+    transition: all 0.5s ;
+  }
+  header iframe {
+    max-width: 100%;
+  }
+  header .main-title {
+    font-family: 'Open Sans', Roboto;
+    font-weight: 900;
+    color: white;
+    text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    position: absolute;
+    z-index: 100;
+    width: 100%;
+    left: 0;
+  }
+  header .h1-1 {
+    font-size: 60px;
+    top: 100px;
+  }
+  header .h1-2 {
+    font-size: 42px;
+    top: 156px;
+  }
+  header .sub-title {
+    font-size: 14px;
+    top: 220px;
+  }
+  header nav {
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 100%;
+    overflow: auto;
+    position: relative;
+    padding: 10px;
+    margin: none;
+  }
+  header nav #logo {
+    display: none;
+    top: 10px;
+    left: 10px;
+    font-size: 20px;
+    height: 40px;
+    line-height: 40px;
+  }
+  header nav #mode-btn {
+    float: left;
+    margin-right: 0;
+    /*
+				background-color:rgba(0,0,0,0.2);
+				display:inline-block;
+				height:40px;
+				border-radius:20px;
+				border:solid 2px white;
+				
+				
+				
+				span{
+					font-family:sans-serif;
+					margin:0;
+					padding:0 10px;
+					display:inline-block;
+					line-height: 36px;
+					cursor:pointer;
+				}
+				#video-mode{
+					background-color:white;
+					margin-right:-2px;
+					border-radius:16px 0 0 16px;
+				}
+				#music-mode{
+					transition:all 0.3s;
+					border-radius:0 16px 16px 0;
+					margin-left:-2px;
+					cursor:pointer;
+					color:#777;
+					&:hover{
+						color:white;
+					}
+				}
+				*/
+  }
+  header nav ul {
+    overflow: auto;
+    display: block;
+    width: 70%;
+    float: right;
+  }
+  header nav ul li {
+    float: none;
+  }
+  header nav ul li #search-div input {
+    width: 80%;
+    font-size: 16px;
+  }
+  main {
+    width: 100%;
+  }
+  main #now-playing {
+    font-size: 20px;
+    font-weight: 100;
+    margin: 20px auto;
+    padding: 0 10px;
+    width: 960px;
+  }
+  main #search-result-info {
+    font-size: 14px;
+    margin: 20px auto 0px auto;
+    padding: 0 10px;
+    width: 960px;
+  }
+  main #search-result-info #search-word,
+  main #search-result-info #total-result,
+  main #search-result-info #total-pages {
+    font-size: 16px;
+  }
+  main section {
+    width: 960px;
+  }
+  footer {
+    position: relative;
+    width: 100%;
+    height: 600px;
+  }
+  footer .footer-logo {
+    position: absolute;
+    z-index: 100;
+    top: 20px;
+    left: 20px;
+    padding: 20px 10px;
+  }
+  footer .footer-p {
+    width: 185px;
+    top: 100px;
+    left: 20px;
+  }
+  footer .footer-outer-ul {
+    position: absolute;
+    z-index: 100;
+    top: 260px;
+    left: 20px;
+    list-style-type: none;
+    text-decoration: none;
+  }
+  footer .footer-outer-ul > li {
+    float: none;
+    width: 260px;
+    margin: 0 0 20px 0;
+    text-decoration: none;
+  }
+  footer .footer-outer-ul > li .footer-inner-ul {
+    list-style-type: none;
+  }
+  footer .footer-outer-ul > li .footer-inner-ul li {
+    padding-bottom: 5px;
+    color: white;
+    font-size: 18px;
+    font-weight: 100;
+  }
+  footer .footer-outer-ul > li .footer-inner-ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+  }
+  footer .footer-outer-ul > li .footer-inner-ul li a:hover {
+    text-decoration: underline;
+  }
+  footer .footer-outer-ul > li .footer-inner-ul .li-title {
+    color: white;
+    font-size: 20px;
+    font-weight: 900;
+    text-shadow: 1px 1px 1px #aaa;
+    padding-bottom: 15px;
+  }
+}

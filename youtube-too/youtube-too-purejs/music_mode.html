@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="author" content="Adyjs">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate"/>
+		<meta http-equiv="Pragma" content="no-cache"/>
+		<meta http-equiv="Expires" content="0"/>
+		<title>YouTube , Too - Music Mode</title>
+		<link href="https://fonts.googleapis.com/css?family=Caveat|Montserrat|Noto+Sans|Open+Sans|Roboto|Permanent+Marker" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/earlyaccess/notosanstc.css">
+		<link rel="stylesheet" type="text/css" href="css/normalize.css">
+		<link rel="stylesheet" type="text/css" href="css/music_mode.css">
+		<link rel="stylesheet" type="text/css" href="css/RWD_index.css">
+		<link rel="shortcut icon" href="image/favicon.ico">
+		
+		<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+	</head>
+	<body>
+		<div class="cover-search-loader"></div>
+		<div id="back-top"></div>
+		<header>
+			<nav>
+				<a id="logo" href="https://Adyjs.github.io/youtube-too/youtube-too-purejs/music_mode.html">YouTube , Too - Music Mode</a>
+				
+				<ul>
+					<li>
+						<div id="search-div" >
+							<input id="search-input" placeholder="Search" maxlength="70" type="text" name="search-input">
+							<span id="search-span"></span>
+						</div>
+					</li>
+				</ul>
+				<div id="mode-btn">
+					<span id="video-mode">Video Mode</span>
+					<span id="music-mode">Music Mode</span>
+				</div>
+			</nav>
+			
+
+			<div id="music-mode-display">
+
+				<section id="player-area">
+					<div id="player"></div>
+					<div id="music-info">
+						<div id="now-playing-info">
+							<p id="now-playing-sign">Now Playing :</p>
+							<p id="now-playing-track-title"></p>
+							<p id='now-playing-track-author'></p>
+							<p id="now-playing-track-total"></p>
+						</div>
+						<div id="control">
+							<span id="player-source"></span>
+							<span id="player-stop"></span>
+							<span id="player-play"></span>
+							<span id="player-previous"></span>
+							<span id="player-next"></span>
+						</div>
+					</div>
+				</section>
+
+				<section id="playlist-area">
+					<ul id="playlist-area-ul">
+						
+					</ul>
+				</section>
+			</div>
+
+		</header>
+
+		<main>
+			<h3 id="now-playing"></h3>
+			<span id="search-result-info">符合 <span id="search-word"></span> 的結果，約有 <span id="total-result"></span> 項，總共 <span id="total-pages"></span> 頁</span>
+			<section id="main-section">
+				
+			</section>
+			<div class="local-search-loader"></div>
+		</main>
+
+		<footer>
+			<a class="footer-logo" href="https://Adyjs.github.io/youtube-too/youtube-too-purejs/">YouTube , Too</a>
+			<p class="footer-p">本網頁之所搜尋功能所展現的影片、圖片皆為 Google 及 YouTube 用戶本身所有，本網頁僅串接公開 API 來作「非商業」展示使用。</br></br>The rights of all the searched videos &amp; images with the Google YouTube API are belonging to the Google YouTube and the YouTube users , this website for non-comercial use and demostration.</p>
+			<ul class="footer-outer-ul">
+				<li>
+					<ul class="footer-inner-ul">
+						<li class="li-title">Author</li>
+						<li>Adyjs Chang</li>
+						<li>adyjsdev@gmail.com</li>
+					</ul>
+				</li>
+				<li>
+					<ul class="footer-inner-ul">
+						<li class="li-title">About me</li>
+						<li><a href="https://github.com/Adyjs" rel="noreferrer noopener" target="_blank">My Github</a></li>
+						<li><a href="https://Adyjs.github.io/" rel="noreferrer noopener" target="_blank">My Website</a></li>
+					</ul>
+				</li>
+				<li>
+					<ul class="footer-inner-ul">
+						<li class="li-title">Google Youtube API</li>
+						<li><a href="https://developers.google.com/youtube/" rel="noreferrer noopener" target="_blank">YouTube Google Developers</a></li>
+						<li><a href="https://developers.google.com/youtube/v3/" rel="noreferrer noopener" target="_blank">YouTube data API v3</a></li>
+					</ul>
+				</li>
+			</ul>
+		</footer>
+	<!--script type="text/javascript" src="https://www.youtube.com/iframe_api"></script-->
+	<script type="text/javascript" src="js/music_mode.js"></script>
+	</body>
+</html>

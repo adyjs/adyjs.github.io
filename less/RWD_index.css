@@ -1,0 +1,110 @@
+@media screen and (max-width: 1023px) {
+  header {
+    position: relative;
+    width: 100%;
+    padding-top: 60px;
+    margin: 0 auto 30px auto;
+  }
+  header a {
+    float: none;
+    width: 160px;
+    height: 160px;
+  }
+  header a #svg-logo {
+    position: absolute;
+    top: 40px;
+    left: calc(50% - 80px);
+  }
+  header #language {
+    left: 0;
+  }
+  header p {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    color: #c29d7f;
+    margin-top: 160px;
+    padding-left: 0px;
+    line-height: 50px;
+  }
+  section#main-content {
+    width: 100%;
+    margin: 0 auto;
+  }
+  section#main-content p {
+    width: 100%;
+    padding: 0 16px;
+  }
+  section#main-content .sub-title {
+    text-align: center;
+    margin: 30px  0 20px 0;
+  }
+  section#main-content .works {
+    list-style-type: none;
+    overflow: auto;
+  }
+  section#main-content .works li {
+    position: relative;
+    float: none;
+  }
+  section#main-content .works li .icon-hub {
+    background-size: 100% 100%;
+  }
+  section#main-content .works li .share-shorten-url {
+    background-size: 100% 100%;
+  }
+  section#main-content .works li .youtube-too-pure {
+    background-size: 100% 100%;
+  }
+  section#main-content .works li .flickr-too {
+    background-size: 100% 100%;
+  }
+  section#main-content .works li .youtube-too-react {
+    background-size: 100% 100%;
+  }
+  section#main-content .works li .sorting {
+    background-size: 100% 100%;
+  }
+  section#main-content .works li .old {
+    background-size: 100% 100%;
+  }
+  section#main-content .works .type-1,
+  section#main-content .works .type-2 {
+    width: 100%;
+    height: 320px;
+  }
+  section#main-content .works .type-1:nth-child(1),
+  section#main-content .works .type-2:nth-child(1),
+  section#main-content .works .type-1:nth-child(2),
+  section#main-content .works .type-2:nth-child(2),
+  section#main-content .works .type-1:nth-child(3),
+  section#main-content .works .type-2:nth-child(3),
+  section#main-content .works .type-1:nth-child(4),
+  section#main-content .works .type-2:nth-child(4),
+  section#main-content .works .type-1:nth-child(5),
+  section#main-content .works .type-2:nth-child(5),
+  section#main-content .works .type-1:nth-child(6),
+  section#main-content .works .type-2:nth-child(6) {
+    margin: 0 0 50px 0;
+  }
+  section#main-content span {
+    display: block;
+    margin-top: 10px;
+    padding: 20px 32px;
+  }
+  section#main-content .notes {
+    column-count: 1;
+  }
+  footer {
+    height: 100px;
+    margin-top: 90px;
+  }
+  footer .footer-inner-container {
+    width: 100%;
+    padding-top: 20px;
+  }
+  footer .footer-inner-container ul {
+    list-style-type: none;
+    padding: 0 16px;
+  }
+}

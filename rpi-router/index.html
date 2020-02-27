@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate"/>
+	<meta http-equiv="Pragma" content="no-cache"/>
+	<meta http-equiv="Expires" content="0"/>
+	<meta name="author" content="Adyjs-Chang">
+	<title>Rpi-Router樹莓派路由器</title>
+	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/earlyaccess/notosanstc.css">
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<link rel="stylesheet" type="text/css" href="css/RWD_index.css">
+</head>
+<body>
+	<header>
+		<img src="./image/pi_logo.svg">
+		<h1>樹莓派小專題</h1>
+	</header>
+	<main>
+		<h2>你好，我是 Adyjs</h2>
+		<p>這個網頁是我用來介紹我用樹莓派做的一個小專題，以及我學到了什麼</br></br>而這個作品主要就是使用樹莓派本身的硬體模組、作業系統 iptables 等相關功能、配合第三方的開源軟體所呈現出來的應用。</br></br>關於用樹莓派作 AP Router 用來延伸 devices 跟 ISP gateway 連線距離，</br>在網路上已經有很多相關的教學及進階應用，</br>
+		但可能因為硬體版本，作業系統更新或是時間久遠，等等的原因，而導致有些教學文章的內容已無法對應使用</br>在經過我多方的探索閱讀以及好幾次的測試之後，</br>我也寫了一篇新手版的 Raspberry Pi 3 model B AP Router 的 configuration 筆記，</br>這是我用來練習、學習 Linux 作業系統功能設定的小專題</p>
+
+		<p><a rel="noopener noreferrer" target="_blank"  href="https://github.com/Adyjs/Rasp-Pi-WIFI-repeater/blob/master/README.md">樹莓派做個小 router 筆記</a></p>
+
+		<p><a rel="noopener noreferrer" target="_blank"  href="https://github.com/Adyjs/Rasp-Pi-WIFI-repeater/tree/master/_web">前後端網頁建置部分</a></p>
+
+		
+
+		<p>實作內容大概就分四個部分：</p></br>
+		<ul>
+			<li>第三方軟體的安裝、配置</li>
+			<li>設定 WiFi 模組及組態，包括　SoftAP 及 DHCP server</li>
+			<li>設定 iptables 及 forwarding 相關設定</li>
+			<li>Router 本身的 apache 網頁伺服器，建置前後端網頁內容，使用 PHP shell_exec() 函式配合 Bash shell 來呈現系統的相關資訊及設定</li>
+		</ul>
+
+		<section>
+
+			<div class="image-frame">
+				<h3>Pi 本體</h3>
+				<img class="pi-image" src="./image/pi.jpg">
+			</div>
+			
+			<div class="image-frame">
+				<h3>Pi-router 相關硬體及組態對應圖</h3>
+				<img class="pi-image" src="./image/pi-ppt1.png">
+			</div>
+			<div class="image-frame">
+				<h3>網路拓樸圖</h3>
+				<img class="pi-image" src="./image/pi-ppt2.png">
+			</div>
+			<div class="image-frame">
+				<h3>系統登入畫面 - 桌面版</h3>
+				<img class="pi-image" src="./image/login1.png">
+			</div>
+			<div class="image-frame">
+				<h3>系統登入畫面 - RWD 版</h3>
+				<img class="pi-image" src="./image/login2.png">
+			</div>
+			<div class="image-frame">
+				<h3>系統操作畫面 - 桌面版</h3>
+				<img class="pi-image" src="./image/op1.png">
+			</div>
+			<div class="image-frame">
+				<h3>系統操作畫面 - RWD 版</h3>
+				<img class="pi-image" src="./image/op2.png">
+			</div>
+			
+		</section>
+
+		<p>在接觸樹莓派之前，並不清楚 Linux 如何使用，沒有網路理論知識，更不知道系統相關的工具如何使用，</br></br>為了做出這個小專題，讀了 TCP/IP illustrated，建立網路概論的基礎，</br>也開始學習作業系統的理論課程及實際去基礎運用，之後我的目標是進階到寫 driver 及 kernel</br></p>
+		</br>
+		<p>學到現在，開始對於 GNU/Linux 有一些基礎的使用能力，會寫一些 BASH shell script，例如 : Ping LAN 端 devices 的 shell script
+			<ul>
+				<li><a rel="noopener noreferrer" target="_blank"  href="https://github.com/Adyjs/BASH-shell-script-snippents/blob/master/lan_ping.sh">Ping devices within LAN</a></li>
+			</ul>
+		</p>
+		<p>也越來越習慣在 Ubuntu 上，直接用 Vim 來寫程式，配合 GCC、GDB、makefile 的 GNU 工具來開發 C 語言程式
+			<ul>
+				<li><a rel="noopener noreferrer" target="_blank"  href="https://github.com/Adyjs/DataStructure-Algorithm-Implement">用 C 語言練習基礎資料結構及演算法</a></li>
+			</ul>
+		</p>
+		
+	</main>
+	<footer>
+		<h6>&copy; 2017 Adyjs</h6>
+		<h6>adyjsdev@gmail.com</h6>
+		<h6><a href="https://github.com/adyjs">Github</a></h6>
+	</footer>
+<script type="text/javascript" src="js/index.js"></script>
+</body>
+</html>

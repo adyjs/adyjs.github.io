@@ -1,0 +1,10 @@
+<svg version="1.1" baseProfile="full"  width="160" height="160" xmlns="http://www.w3.org/2000/svg">
+<circle cx="80" cy="80" r="80" fill="#8d6748" />
+<circle cx="80" cy="80" r="70" fill="#8d6748" stroke="white" stroke-width="3" />
+<text x="43" y="130" font-size="20px" font-family="sans-serif" letter-spacing="1px" font-weight="900" fill="white" >ADYJS</text>
+<path d="M80,60 h15 L90,100 h-20 L65,60 z" stroke="white" fill="white"/>
+<path d="M80,25 C77 32.5 , 77 35 , 80 40 S83 45 , 80 51.5" stroke="white" stroke-width="2" fill="none"/>
+<path d="M75,25 C72 32.5 , 72 35 , 75 40 S78 45 , 75 51.5" stroke="white" stroke-width="2" fill="none"/>
+<path d="M85,25 C82 32.5 , 82 35 , 85 40 S88 45 , 85 51.5" stroke="white" stroke-width="2" fill="none"/>
+<path d="M90,65 C110 80 , 110 70 , 90 90" stroke="white" stroke-width="5" fill="none" />
+</svg>

@@ -1,0 +1,41 @@
+body {
+  background-color: #333;
+  overflow: hidden;
+}
+body * {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+section {
+  background-color: #333;
+}
+section svg {
+  float: left;
+}
+section h1 {
+  font-family: 'Open Sans', sans-serif;
+}
+section #not-found {
+  position: absolute;
+  top: -150px;
+  left: 5%;
+  transform: rotate(-20deg);
+  font-size: 650px;
+  float: right;
+  color: rgba(255, 255, 255, 0.7);
+  z-index: -100;
+}
+section #back-index {
+  float: left;
+  margin: 50px 0 0 50px;
+  letter-spacing: 1px;
+  color: rgba(255, 255, 255, 0.8);
+}
+section #back-index:hover {
+  text-decoration: underline;
+}
