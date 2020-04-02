@@ -129,6 +129,12 @@ section#main-content .works li .img-container {
   transition: 0.2s;
   border: white solid 1px;
 }
+section#main-content .works li .mask-info-tw {
+  background-image: url("../image/mask-info-tw.png");
+  background-size: 100% 100%;
+  background-position: top center;
+  background-repeat: no-repeat;
+}
 section#main-content .works li .icon-hub {
   background-image: url("../image/icon-hub.jpg");
   background-size: 100% 100%;
