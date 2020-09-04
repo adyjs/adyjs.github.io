@@ -23,7 +23,7 @@
 		<option value="tw" selected>繁體中文</option>
 		<option value="en" >English</option>
 	</select>
-	<a href="/">
+	<a class="logo-anchor" href="/">
 
 		<svg id="svg-logo" version="1.1" baseProfile="full"  width="160" height="160" xmlns="http://www.w3.org/2000/svg">
 			<g>
@@ -39,7 +39,11 @@
 		</svg>
 
 	</a>
-	<p><em>friendly</em> , <em>diligent</em> , <em>focus</em></p>
+	<p class="slogan" >
+		<em class="slogan-element">friendly</em> , 
+		<em class="slogan-element">diligent</em> , 
+		<em class="slogan-element">focus</em>
+	</p>
 </header>
 
 <section id="main-content">
@@ -47,324 +51,355 @@
 
 	<h2 class="sub-title"></h2>
 	
-	<span class="topic-title web"></span>
+	<span class="topic-title languages"></span>
+
 	<ul class="info">
-		<li>HTML</li>
-		<li>React</li>
-		<li>Redux-Saga</li>
-		<li>MongoDB</li>
-		<li>CSS</li>
-		<li>Redux</li>
-		<li>Node.js</li>
-		<li>RWD</li>
-		<li>JavaScript</li>
-		<li>React-Redux</li>
-		<li>Mongoose</li>
-		<li>SPA</li>
+		<li class="items">JavaScript</li>
+		<li class="items">C</li>
+		<li class="items">HTML</li>
+		<li class="items">CSS</li>
+		<li class="items">BASH</li>
+		<li class="items">Python</li>
+	</ul>
+
+	<span class="topic-title f2e"></span>
+	<ul class="info">
+		<li class="items">React</li>
+		<li class="items">Redux</li>
+		<li class="items">Redux-Saga</li>
+		<li class="items">React-Router</li>
+	</ul>
+	<span class="topic-title b2e"></span>
+	<ul class="info">
+		<li class="items">Node</li>
+		<li class="items">MongoDB</li>
+		<li class="items">PostgreSQL</li>
+	</ul>
+	<span class="topic-title libs-tools"></span>
+	<ul class="info">
+		<li class="items">NPM</li>
+		<li class="items">Dev Tools</li>
+		<li class="items">Postman</li>
+		<li class="items">LESS</li>
+		<li class="items">Gulp</li>
+		<li class="items">CORS</li>
+		<li class="items">Path</li>
+		<li class="items">Axios</li>
+		<li class="items">Express</li>
+		<li class="items">Nodemon</li>
+		<li class="items">I18next</li>
+		<li class="items">GNU-GDB</li>
+		<li class="items">OpenSSL</li>
+		<li class="items">GNU-GCC</li>
+		<li class="items">Qt</li>
+		<li class="items">Electron</li>
+		<li class="items">GNU-Makefile</li>
+		<li class="items">VMware</li>
 	</ul>
 
 	<span class="topic-title system"></span>
 	<ul class="info">
-		<li>C</li>
-		<li>BASH Shell Script</li>
+		<li class="items">Linux</li>
+		<li class="items">HEORKU</li>
 	</ul>
 
-	<!--span id="ps"></span-->
+	<span class="topic-title concept"></span>
+	<ul class="info">	
+		<li class="items">RWD</li>
+		<li class="items">SPA</li>
+	</ul>
 
-	<h2 class="sub-title"></h2>
 	
-	<span class="topic-title web"></span>
-	<ul class="info">
-		<li>NPM</li>
-		<li>Dev Tools</li>
-		<li>I18next</li>
-		<li>Postman</li>
-		<li>LESS</li>
-		<li>Gulp</li>
-		<li>CORS</li>
-		<li>HEROKU</li>
-		<li>path</li>
-		<li>axios</li>
-		<li>Nodemon</li>
-	</ul>
 
-	<span class="topic-title system"></span>
-	<ul class="info">
-		<li>GNU-GDB</li>
-		<li>OpenSSL</li>
-		<li>GNU-GCC</li>
-		<li>Qt</li>
-		<li>GNU-Makefile</li>
-		<li>VMware</li>
-	</ul>
+
+	
 
 	<h2 class="sub-title"></h2>
-	<ul class="works">
-		<li class="items type-1">
-			<a 
-				class="item-container-anchor"
-				rel="noopener noreferrer" 
-				target="_blank" 
-				href="https://mask-info-tw.herokuapp.com">
-				<div class="img-container mask-info-tw"></div>
-			</a>
-			<p class="item-title"></p>
-			<a 
-				class="item-container-anchor"
-				rel="noopener noreferrer" 
-				target="_blank" 
-				href="https://mask-info-tw.herokuapp.com">
-				<div class="item-detail">
-					<h3 class="item-detail-title" >技術細節</h3>
-					<p class="item-detail-content" >React / Redux / React-Redux / Redux-Saga</p>
-					<p class="item-detail-content" >Nodejs / Express / g0v resources</p>
-					<p class="item-detail-content" >HEROKU (static server)</p>
-					<p class="item-detail-content" >g0v community</p>
-				</div>
-			</a>
-		</li>
-		<li class="items type-1">
-			<a 
-				class="item-container-anchor"
-				rel="noopener noreferrer" 
-				target="_blank" 
-				href="https://icon-hub-2019.herokuapp.com">
-				<div class="img-container icon-hub"></div>
-			</a>
-			<p class="item-title"></p>
-			<a 
-				class="item-container-anchor"
-				rel="noopener noreferrer" 
-				target="_blank" 
-				href="https://icon-hub-2019.herokuapp.com">
-				<div class="item-detail">
-					<h3 class="item-detail-title" >技術細節</h3>
-					<p class="item-detail-content" >React / Redux / React-Redux / Redux-Saga / React-Router</p>
-					<p class="item-detail-content" >Nodejs / Express / Iconfinder API v3</p>
-					<p class="item-detail-content" >HEROKU (proxy server)</p>
-				</div>
-			</a>
-		</li>
-		<li class="items type-1">
-			<a 
-				class="item-container-anchor"
-				rel="noopener noreferrer" 
-				target="_blank" 
-				href="https://share-shorten-url-2019.herokuapp.com">
-				<div class="img-container share-shorten-url"></div>
-			</a>
-			<p class="item-title"></p>
-			<a 
-				class="item-container-anchor"
-				rel="noopener noreferrer" 
-				target="_blank" 
-				href="https://share-shorten-url-2019.herokuapp.com">
-				<div class="item-detail">
-					<h3 class="item-detail-title" >技術細節</h3>
-					<p class="item-detail-content" >React / React-Router</p>
-					<p class="item-detail-content" >Nodejs / Express / MongoDB / Mongoose</p>
-					<p class="item-detail-content" >HEROKU</p>
-					<p class="item-detail-content" >RWD</p>
-				</div>
-			</a>
-		</li>
-		<li class="items type-1">
-			<a 
-				class="item-container-anchor"
-				rel="noopener noreferrer" 
-				target="_blank" 
-				href="https://thsr-public-info.herokuapp.com">
-				<div class="img-container thsr"></div>
-			</a>
-			<p class="item-title"></p>
-			<a 
-				class="item-container-anchor"
-				rel="noopener noreferrer" 
-				target="_blank" 
-				href="https://thsr-public-info.herokuapp.com">
-				<div class="item-detail">
-					<h3 class="item-detail-title" >技術細節</h3>
-					<p class="item-detail-content" >React / React-Router</p>
-					<p class="item-detail-content" >Nodejs / Express / MOTC Transport API V2</p>
-					<p class="item-detail-content" >HEROKU (static server)</p>
-				</div>
-			</a>
-		</li>
-		<li class="items type-1">
-			<a 
-				class="item-container-anchor"
-				rel="noopener noreferrer" 
-				target="_blank" 
-				href="https://adyjs.github.io/youtube-too/youtube-too-purejs">
-				<div class="img-container youtube-too-pure"></div>
-			</a>
-			<p class="item-title"></p>
-			<a 
-				class="item-container-anchor"
-				rel="noopener noreferrer" 
-				target="_blank" 
-				href="https://adyjs.github.io/youtube-too/youtube-too-purejs">
-				<div class="item-detail">
-					<h3 class="item-detail-title" >技術細節</h3>
-					<p class="item-detail-content" >HTML / CSS / Native JavaScript</p>
-					<p class="item-detail-content" >YouTube API v3</p>
-					<p class="item-detail-content" >GitHub Page</p>
-					<p class="item-detail-content" >RWD</p>
-				</div>
-			</a>
-		</li>
-		<li class="items type-1">
-			<a 
-				class="item-container-anchor"
-				rel="noopener noreferrer" 
-				target="_blank" 
-				href="https://adyjs.github.io/flickr-too">
-				<div class="img-container flickr-too"></div>
-			</a>
-			<p class="item-title"></p>
-			<a 
-				class="item-container-anchor"
-				rel="noopener noreferrer" 
-				target="_blank" 
-				href="https://adyjs.github.io/flickr-too">
-				<div class="item-detail">
-					<h3 class="item-detail-title" >技術細節</h3>
-					<p class="item-detail-content" >HTML / CSS / Native JavaScript</p>
-					<p class="item-detail-content" >Flickr Developer API</p>
-					<p class="item-detail-content" >GitHub Page</p>
-				</div>
-			</a>
-		</li>
+	<span class="topic-title">網頁作品</span>
 
-		<li class="items type-1">
-			<a 
-				class="item-container-anchor"
-				rel="noopener noreferrer" 
-				target="_blank" 
-				href="https://adyjs.github.io/sorting-algorithm-visualization">
-				<div class="img-container sorting"></div>
-			</a>
-			<p class="item-title"></p>
-			<a 
-				class="item-container-anchor"
-				rel="noopener noreferrer" 
-				target="_blank" 
-				href="https://adyjs.github.io/sorting-algorithm-visualization">
-				<div class="item-detail">
-					<h3 class="item-detail-title" >技術細節</h3>
-					<p class="item-detail-content" >HTML / CSS / Native JavaScript</p>
-					<p class="item-detail-content" >GitHub Page</p>
-					<p class="item-detail-content" >RWD</p>
+	<!-- 口罩列表 -->
+	<article class="portfolio-box" >
+		<a 
+			class="portfolio-anchor" 
+			href="https://mask-info-tw.herokuapp.com"
+			rel="noreferrer noopener"
+			target="_blank">
+			<!-- each works image -->
+			<div id="mask-info-tw" class="portfolio-img"></div>
+
+			<div class="portfolio-rough-intro">
+				<h3 class="portfolio-name">臺灣口罩資訊查詢列表</h3>
+				<p class="portfolio-describe">與 g0v 社群協作，於前端製作較低流量之文字查詢、列表版本，輔以 google map 完成查詢及定位，適合低流量、低效能之設備使用
+				</p>
+				<div class="portfolio-detail-intro" >
+					<h3 class="portfolio-detail-title">技術細節</h3>
+					<p class="portfolio-detail-content">React / Redux / Rreact-Redux / Redux-Saga</p>
+					<p class="portfolio-detail-content">Nodejs / Express / g0v Community Resource</p>
+					<p class="portfolio-detail-content">HEROKU (static server)</p>
 				</div>
-			</a>	
-		</li>
-		<!--li class="items type-2">
-			<a rel="noopener noreferrer" target="_blank" href="https://adyjs.github.io/youtube-too/youtube-too-react">
-				<div class="img-container youtube-too-react"></div>
-			</a>
-			<h2 class="item-title"></h2>	
-		</li-->
-	</ul>
+			</div>
+		</a>
+	</article>
+
+	<!-- Icon Hub -->
+	<article class="portfolio-box" >
+		<a 
+			class="portfolio-anchor" 
+			href="https://icon-hub-2019.herokuapp.com"
+			rel="noreferrer noopener"
+			target="_blank">
+			<!-- each works image -->
+			<div id="icon-hub" class="portfolio-img"></div>
+
+			<div class="portfolio-rough-intro">
+				<h3 class="portfolio-name">Icon Hub</h3>
+				<p class="portfolio-describe">嘗試串接各大圖檔網站之 Public API，於前端集各站圖片之大成，製作使用更方便的服務。</p>
+				<div class="portfolio-detail-intro" >
+					<h3 class="portfolio-detail-title">技術細節</h3>
+					<p class="portfolio-detail-content">React / Redux / Rreact-Redux / Redux-Saga / React-Router</p>
+					<p class="portfolio-detail-content">Nodejs / Express / Iconfinder API V3</p>
+					<p class="portfolio-detail-content">HEROKU (proxy server)</p>
+				</div>
+			</div>
+		</a>
+	</article>
 
 
-	<h2 class="sub-title"></h2>
-	<ul class="works">
-		<li class="items type-1">
-			<a 
-				class="item-container-anchor"
-				rel="noopener noreferrer" 
-				target="_blank" 
-				href="https://github.com/Adyjs/Qt-checksum-machine">
-				<div class="img-container checksum-machine"></div>
-			</a>
-			<p class="item-title"></p>
-			<a 
-				class="item-container-anchor"
-				rel="noopener noreferrer" 
-				target="_blank" 
-				href="https://github.com/Adyjs/Qt-checksum-machine">
-				<div class="item-detail">
-					<h3 class="item-detail-title" >技術細節</h3>
-					<p class="item-detail-content" >C / C++ / Qt</p>
-					<p class="item-detail-content" >OpenSSL</p>
+	<!-- ShareURL -->
+	<article class="portfolio-box" >
+		<a 
+			class="portfolio-anchor" 
+			href="https://share-shorten-url-2019.herokuapp.com"
+			rel="noreferrer noopener"
+			target="_blank">
+			<!-- each works image -->
+			<div id="share-url" class="portfolio-img"></div>
+
+			<div class="portfolio-rough-intro">
+				<h3 class="portfolio-name">ShareURL</h3>
+				<p class="portfolio-describe">縮短網址的服務、配合 QR code，適合線上、線下，隨時隨地分享傳遞網址</p>
+				<div class="portfolio-detail-intro" >
+					<h3 class="portfolio-detail-title">技術細節</h3>
+					<p class="portfolio-detail-content">React / React-Router</p>
+					<p class="portfolio-detail-content">Nodejs / Express / MongoDB / Mongoose</p>
+					<p class="portfolio-detail-content">HEROKU</p>
+					<p class="portfolio-detail-content">RWD</p>
 				</div>
-			</a>
+			</div>
+		</a>
+	</article>
+
+	<!-- THSR -->
+	<article class="portfolio-box" >
+		<a 
+			class="portfolio-anchor" 
+			href="https://thsr-public-info.herokuapp.com"
+			rel="noreferrer noopener"
+			target="_blank">
+			<!-- each works image -->
+			<div id="thsr" class="portfolio-img"></div>
+
+			<div class="portfolio-rough-intro">
+				<h3 class="portfolio-name">臺灣高鐵公開資訊查詢
+				<p class="portfolio-describe">串接臺灣高鐵 Public API，並加上視覺化操作</p>
+				<div class="portfolio-detail-intro" >
+					<h3 class="portfolio-detail-title">技術細節</h3>
+					<p class="portfolio-detail-content">React / React-Router</p>
+					<p class="portfolio-detail-content">Nodejs / Express</p>
+					<p class="portfolio-detail-content">MOTC Transport API V2</p>
+					<p class="portfolio-detail-content">HEROKU</p>
+				</div>
+			</div>
+		</a>
+	</article>
+
+	<!-- YouTube, Too pureJS -->
+	<article class="portfolio-box" >
+		<a 
+			class="portfolio-anchor" 
+			href="https://adyjs.github.io/youtube-too/youtube-too-purejs"
+			rel="noreferrer noopener"
+			target="_blank">
+			<!-- each works image -->
+			<div id="youtube-too" class="portfolio-img"></div>
+
+			<div class="portfolio-rough-intro">
+				<h3 class="portfolio-name">YouTube, Too</h3>
+				<p class="portfolio-describe">串接 YouTube 影片，有搜尋、播放功能，另有自製音樂模式，可儲存列表播放</p>
+				<div class="portfolio-detail-intro" >
+					<h3 class="portfolio-detail-title">技術細節</h3>
+					<p class="portfolio-detail-content">HTML / CSS / JavaSript</p>
+					<p class="portfolio-detail-content">YouTube API V3</p>
+					<p class="portfolio-detail-content">GitHub Page</p>
+					<p class="portfolio-detail-content">RWD</p>
+				</div>
+			</div>
+		</a>
+	</article>
+
+
+	<!-- Flickr, Too -->
+	<article class="portfolio-box" >
+		<a 
+			class="portfolio-anchor" 
+			href="https://adyjs.github.io/flickr-too"
+			rel="noreferrer noopener"
+			target="_blank">
+			<!-- each works image -->
+			<div id="flickr-too" class="portfolio-img"></div>
+
+			<div class="portfolio-rough-intro">
+				<h3 class="portfolio-name">Flickr, Too</h3>
+				<p class="portfolio-describe">串接 Flickr Public API，有圖片牆、搜尋圖片、放大功能</p>
+				<div class="portfolio-detail-intro" >
+					<h3 class="portfolio-detail-title">技術細節</h3>
+					<p class="portfolio-detail-content">HTML / CSS / JavaSript</p>
+					<p class="portfolio-detail-content">Flickr Developer API</p>
+					<p class="portfolio-detail-content">GitHub Page</p>
+				</div>
+			</div>
+		</a>
+	</article>
+
+
+	<!-- Sorting Visualization -->
+	<article class="portfolio-box" >
+		<a 
+			class="portfolio-anchor" 
+			href="https://adyjs.github.io/sorting-algorithm-visualization"
+			rel="noreferrer noopener"
+			target="_blank">
+			<!-- each works image -->
+			<div id="sorting" class="portfolio-img"></div>
+
+			<div class="portfolio-rough-intro">
+				<h3 class="portfolio-name">Sorting Visualization</h3>
+				<p class="portfolio-describe">排序法視覺化，目前提供 Bubble / Selection / Exchange 三種 sorting 的演算法視覺化，可調整排序速度，幫助瞭解排序差異</p>
+				<div class="portfolio-detail-intro" >
+					<h3 class="portfolio-detail-title">技術細節</h3>
+					<p class="portfolio-detail-content">HTML / CSS / JavaSript</p>
+					<p class="portfolio-detail-content">GitHub Page</p>
+					<p class="portfolio-detail-content">RWD</p>
+				</div>
+			</div>
+		</a>
+	</article>
+
+
+	<span class="topic-title">桌面應用、網路應用、LeetCode 相關作品</span>
+
+	<!-- 雜湊驗證程式 QT 版 -->
+	<article class="portfolio-box" >
+		<a 
+			class="portfolio-anchor" 
+			href="https://github.com/Adyjs/Qt-checksum-machine"
+			rel="noreferrer noopener"
+			target="_blank">
+			<!-- each works image -->
+			<div id="qt-checksum-app" class="portfolio-img"></div>
+
+			<div class="portfolio-rough-intro">
+				<h3 class="portfolio-name">雜湊驗證程式 QT 版</h3>
+				<p class="portfolio-describe">使用 C/C++ , OpenSSL , QT 技術寫成之雜湊碼驗證程式，直接讀取檔案，以 3 個 threads 各自算出 MD5 / SHA-256 / SHA-512 之檔案雜湊值，並可直接比對原檔案之雜湊值，確  認是否正確</p>
+				<div class="portfolio-detail-intro" >
+					<h3 class="portfolio-detail-title">技術細節</h3>
+					<p class="portfolio-detail-content">C / C++</p>
+					<p class="portfolio-detail-content">QT</p>
+					<p class="portfolio-detail-content">OpenSSL</p>
+				</div>
+			</div>
+		</a>
+	</article>
+
+	<!-- 樹莓派路由器 -->
+	
+	<article class="portfolio-box" >
+		<a 
+			class="portfolio-anchor" 
+			href="https://adyjs.github.io/rpi-router/"
+			rel="noreferrer noopener"
+			target="_blank">
+			<!-- each works image -->
+			<div id="rasp-pi-router" class="portfolio-img"></div>
+
+			<div class="portfolio-rough-intro">
+				<h3 class="portfolio-name">樹莓派路由器</h3>
+				<p class="portfolio-describe">初期第一次學習 Linux 作業系統，嘗試使用 Ethernet wire、WiFi-Dongle，配合各種網路程式套件、修改網路配置、以達到家用 AP 的相關功能</p>
+				<div class="portfolio-detail-intro" >
+					<h3 class="portfolio-detail-title">技術細節</h3>
+					<p class="portfolio-detail-content">HTML / CSS / JavaScript / PHP</p>
+					<p class="portfolio-detail-content">Linux / IPtables / Apache2 / ISC DHCP server / WPA supplicant / Hostapd</p>
+					<p class="portfolio-detail-content">Raspberry Pi 3 Model B</p>
+				</div>
+			</div>
+		</a>
+	</article>
+
+	<!-- Leetcode -->
+	<article class="portfolio-box" >
+		<a 
+			class="portfolio-anchor" 
+			href="https://github.com/Adyjs/leetcode"
+			rel="noreferrer noopener"
+			target="_blank">
 			
-		</li>
-		<li class="items type-1">
-			<a 
-				class="item-container-anchor"
-				rel="noopener noreferrer" 
-				target="_blank" 
-				href="https://adyjs.github.io/rpi-router/">
-				<div class="img-container raspberry-router"></div>
-			</a>
-			<p class="item-title"></p>
-			<a 
-				class="item-container-anchor"
-				rel="noopener noreferrer" 
-				target="_blank" 
-				href="https://adyjs.github.io/rpi-router/">
-				<div class="item-detail">
-					<h3 class="item-detail-title" >技術細節</h3>
-					<p class="item-detail-content" >Raspberry Pi 3 model B</p>
-					<p class="item-detail-content" >Linux / iptables / Apache2 / PHP / HTML / CSS / JavaScript / ISC DHCP server / WPA supplicant / Hostapd</p>
-					<p class="item-detail-content" >初期第一次學習使用 Linux，內容不求甚解、只求可以運行，歷史久遠、不堪聞問</p>
+			<!-- each works image -->
+			<div id="leetcode" class="portfolio-img"></div>
+
+			<div class="portfolio-rough-intro">
+				<h3 class="portfolio-name">LeetCode</h3>
+				<p class="portfolio-describe">本身使用 JavaScript 及 C 語言來寫 LeetCode, 除了精進本身的程式語言能力，也希望能加強解題的思考能力</p>
+				<div class="portfolio-detail-intro" >
+					<h3 class="portfolio-detail-title">技術細節</h3>
+					<p class="portfolio-detail-content">JavaSript / C</p>
+					<p class="portfolio-detail-content">LeetCode easy level</p>
 				</div>
-			</a>
-		</li>
-		<li class="items type-1">
-			<a 
-				class="item-container-anchor"
-				rel="noopener noreferrer" 
-				target="_blank" 
-				href="https://github.com/Adyjs/linux-c-dev-practice">
-				<div class="img-container linux-c-development"></div>
-			</a>
-			<p class="item-title"></p>
-			<a 
-				class="item-container-anchor"
-				rel="noopener noreferrer" 
-				target="_blank" 
-				href="https://github.com/Adyjs/linux-c-dev-practice">
-				<div class="item-detail">
-					<h3 class="item-detail-title" >技術細節</h3>
-					<p class="item-detail-content" >C / Linux / GCC / GDB / MakeFile</p>
-					<p class="item-detail-content" >Linux Programming Interface </p>
-				</div>
-			</a>
-		</li>
-		<li class="items type-1">
-			<a 
-				class="item-container-anchor"
-				rel="noopener noreferrer" 
-				target="_blank" 
-				href="https://github.com/Adyjs/leetcode">
-				<div class="img-container leetcode"></div>
-			</a>
-			<p class="item-title"></p>
-			<a 
-				class="item-container-anchor"
-				rel="noopener noreferrer" 
-				target="_blank" 
-				href="https://github.com/Adyjs/leetcode">
-				<div class="item-detail">
-					<h3 class="item-detail-title" >技術細節</h3>
-					<p class="item-detail-content" >C / JavaScript</p>
-					<p class="item-detail-content" >LeetCode Online Platform</p>
-				</div>
-			</a>
-		</li>
-	</ul>
+			</div>
+		</a>
+	</article>
+
+
+	<!--  -->
+	<!-- <a 
+		class="portfolio-anchor" 
+		href=""
+		rel="noreferrer noopener"
+		target="_blank">
+		<article class="portfolio-box" >
+			<div id="" class="portfolio-img"></div>
+
+			<div class="portfolio-rough-intro">
+				<h3 class="portfolio-name"></h3>
+				<p class="portfolio-describe"></p>
+			</div>
+			<div class="portfolio-detail-intro" >
+				<h3 class="portfolio-detail-title">技術細節</h3>
+				<p class="portfolio-detail-content"></p>
+				<p class="portfolio-detail-content"></p>
+				<p class="portfolio-detail-content"></p>
+			</div>
+		</article>
+	</a> -->
 
 </section>
 
 <footer>
 	<div class="footer-inner-container">
-		<ul>
-			<li><span>Adyjs</span></li>
-			<li><span>adyjsdev@gmail.com</span></li>
-			<li><a rel="noopener noreferrer" target="_blank" href="https://github.com/adyjs">Github</a></li>
+		<ul class="footer-ul">
+			<li class="footer-items">
+				<span class="footer-item-author">Adyjs</span>
+			</li>
+			<li class="footer-items">
+				<span class="footer-item-email">adyjsdev@gmail.com</span>
+			</li>
+			<li class="footer-items">
+				<a
+					class="footer-item-github" 
+					rel="noopener noreferrer"
+					target="_blank"
+					href="https://github.com/adyjs">Github
+				</a>
+			</li>
 		</ul>
 	</div>
 </footer>

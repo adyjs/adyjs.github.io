@@ -1,14 +1,120 @@
 @font-type-1:'Noto Sans','Ubuntu','Noto Sans TC', sans-serif;
 @font-type-2:Helvetica, 'Noto Sans TC' , Arial , sans-serif;
 
-@media screen and (max-width: 1023px){
+
+
+@media screen and (max-width: 800px){
+
+	#main-content{
+		.portfolio-box{
+			width:100%;
+			height:auto;			
+			padding:0 10%;
+			margin:60px 0;
+			&:hover{
+				.portfolio-anchor{
+					.portfolio-detail-intro{
+						display:block;
+					}
+				}
+			}
+
+			.portfolio-anchor{
+				flex-wrap:wrap;
+				position: relative;
+				width:300px;
+				height:auto;
+				margin:auto;
+				display:flex;
+				flex-direction:row;
+				flex-flow:flex-start;
+
+				.portfolio-img{
+					width:100%;
+					height:200px;
+				}
+				.portfolio-rough-intro{
+					width:100%;
+					height:160px;
+					padding-left:0px;
+					padding-top:10px;
+					.portfolio-detail-intro{
+						padding:0;
+						padding:5px 10px ;
+						width:100%;
+						height:160px;
+						position:absolute;
+						top:0;
+						right:0;
+
+						.portfolio-detail-title{
+							font-size:18px;
+							letter-spacing:2px;
+						}
+						.portfolio-detail-content{
+							font-size:13px;
+							line-height:1.3;
+							padding:5px 0 0 0;
+							letter-spacing:2px;
+						}
+					}
+				}
+
+				#mask-info-tw{
+					background-position:top left;
+					background-size:130%;
+				}
+				#icon-hub{
+					background-position:top left;
+					background-size:135%;
+				}
+				#share-url{
+					background-position:top left;
+					background-size:150%;
+				}
+				#thsr{
+					background-position:top left;
+					background-size:150%;
+				}
+				#youtube-too{
+					background-position:top center;
+					background-size:100%;
+				}
+				#flickr-too{
+					background-position:top;
+					background-size:100%;
+				}
+				#sorting{
+					background-position:top center;
+					background-size:50%;
+				}
+				#qt-checksum-app{
+					background-position:top center;
+					background-size:130%;
+				}
+				#rasp-pi-router{
+					background-position:top;
+					background-size:150%;
+				}
+				#leetcode{
+					background-position:top;
+					background-size:175%;
+				}
+			}
+		}
+	}
+
+}
+
+
+
+@media screen and (max-width: 1023.9px){
 
 	header{
 		position: relative;
-		width:100%;
 		padding-top:60px;
 		margin:0 auto 30px auto;
-		a{
+		.logo-anchor{
 			float:none;
 			width:160px;
 			height:160px;
@@ -18,11 +124,10 @@
 				left:~"calc(50% - 80px)";
 			}
 		}
-		
 		#language{
-			left:0;
+			right:0;
 		}
-		p{
+		.slogan{
 			text-align: center;
 			display: inline-block;
 			width:100%;
@@ -32,88 +137,52 @@
 			padding-left:0px;
 			line-height: 50px;
 		}
-
-
 	}
 
 	section#main-content{
-		width:100%;
-		margin:0 auto;
-		p{
+		.sub-title,
+		.topic-title,
+		.info,
+		.info .items{
+			margin:0;
+			padding:0;
+		}
+		#introduction{
 			width:100%;
-			padding: 0 16px;
+			padding: 0 10%;
 		}
 		.sub-title{
 			text-align: center;
-			margin:30px  0 20px 0;
+			margin:60px 0 0 0;
+		}
+		.topic-title{
+			color:#a6764f;
+			display:inline-block;
+			margin:60px 0 40px 1.3%;
+
+			border-bottom:#a6764f solid 1px;
+			font-size:19px;
 		}
 		.info{
-			li{
+			width:100%;
+			padding:0 10%;
+			.items{
+				font-size:14px;
+				width:28%;
+				margin:0 2.6% 0 0;
+				padding:10px 0;
+				text-align:center;
 			}
-		}
-		.works{
-			list-style-type: none;
-			overflow: auto;
-			li{
-				position: relative;
-				float:none;
-				.icon-hub{
-					background-size: 100% 100%;
-				}
-				.share-shorten-url{
-					background-size: 100% 100%;
-				}
-				.youtube-too-pure{
-					background-size: 100% 100%;
-				}
-				.flickr-too{
-					background-size: 100% 100%;
-				}
-				.youtube-too-react{
-					background-size: 100% 100%;
-				}
-				.sorting{
-					background-size: 100% 100%;
-				}
-				.old{
-					background-size: 100% 100%;
-				}
-			}
-			.type-1 , .type-2{
-				width:100%;
-				height:320px;
-				&:nth-child(1),
-				&:nth-child(2),
-				&:nth-child(3),
-				&:nth-child(4),
-				&:nth-child(5),
-				&:nth-child(6){
-					margin:0 0 50px 0;
-				}
-			}
-
-		}
-		span{
-			display: block;
-			margin-top: 10px;
-			padding:20px 32px;
-		}
-		.notes{
-			column-count:1;
 		}
 	}
 
 
 	footer{
-		height:100px;		
-		margin-top: 90px;
 		.footer-inner-container{
-			width:100%;
-			padding-top: 20px;
-			ul{
-				list-style-type: none;
-				padding:0 16px;
-			}
+			padding:70px;
 		}
 	}
 }
+
+
+

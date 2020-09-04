@@ -14,16 +14,20 @@ i18next.init({
           "1":"努力" , 
           "2":"專注"
         },
-        "introduction" : "我是國泓，歡迎來到我的個人網頁。我自學程式開發，從 2017 年開始學寫程式，學習內容包含 Web 網頁開發，主要在前端領域較拿手，熟悉前端原生語法或 React 框架，另外也有學習些許的 C、Linux、GNU/Linux 相關工具，我看到貴公司有相關的工作職務正在徵人，職務內容我也很有興趣，所以我投了履歷。希望能有面試及進一步了解公司的機會，謝謝。",
+        "introduction" : "是國泓，歡迎來到我的個人網頁。我自學軟體開發，從 2017 年開始學寫程式，寫過網頁前、後端，桌面應用程式，用過 GNU/Linux 、Library 及相關工具，我看到貴公司有相關的工作職務正在徵人，職務內容我也很有興趣，所以我投了履歷。希望能有面試及進一步了解公司的機會，謝謝。",
+        "first-letter" : "我",
+        
         "sub-title" : {
-          "0" : "程式語言及相關技術",
-          "1" : "相關工具、平台使用經驗",
-          "2" : "前端網頁作品集",
-          "3" : "Linux & C 相關練習",
+          "0" : "技術能力",
+          "1" : "作品集",
         },
         "topic-title" : {
-          "web" : "網頁",
-          "system" : "C & Linux",
+          "languages" : "程式語言經驗",
+          "f2e": "前端框架經驗",
+          "b2e": "後端、資料庫經驗",
+          "libs-tools": "程式庫、開發工具經驗",
+          "system" : "系統、平台經驗",
+          "concept": "技術觀念"
         },
         "ps" : {
           "triangle-notation" : "&#9650; : 代表曾經學習過的語言技能，並使用其語言來做過作品的某一個部分，但沒有進一步深入學習其語言特性",
@@ -52,16 +56,19 @@ i18next.init({
           "1":"diligent" , 
           "2":"focus"
         },
-        "introduction" : "I am Adyjs , welcome to my website. I am a self-taught developer, I started learn programming since 2017 and started to learn about web development, specific in front-end field, I know how to programming in native front-end languages and React libs. also including  C、Linux、GNU/Linux and other related tools, I found some jobs position of your company are available now and I am also interesting on it and apply for it as well. Hope I could have an opportunity to be a interviewee of your company and can both know each other well, thank you.",
+        "introduction" : " am Adyjs , welcome to my home website. I am a self-taught developer , I started learn programming about 2017 , I had done some personal works in front-end , back-end , desktop , also had some experience in GNU/Linux , Libraries and Tools , I found some jobs position of your company are available now and I am also interesting on it and apply for it as well. Hope I could have an opportunity to be a interviewee of your company and can both know each other well, thank you.",
+        "first-letter" : "I",
         "sub-title" : {
           "0" : "Programming Skills",
-          "1" : "Tools, Platform Experiences",
-          "2" : "Web Front-End Portfolio",
-          "3" : "Linux & C",
+          "1" : "Portfolio",
         },
         "topic-title" : {
-          "web" : "Web",
-          "system" : "C & Linux",
+          "languages" : "Languages",
+          "f2e": " Front-End Frameworks",
+          "b2e": "Back-End , DataBase",
+          "libs-tools": "Libs , Tools",
+          "system" : "System , Platform",
+          "concept": "Technique Concept"
         },
         "ps" : {
           "triangle-notation" : "&#9650; : means I have learn that skills and that skills have been used for develop the parts of my portfolio</br> , but I did not research further details about that after that time point.",
@@ -92,43 +99,77 @@ function updateContent(){
     var em = document.querySelectorAll("header p")[0].children;
     for(var i=0 ; i < em.length ; i++){
       var target = "em."+i;
-      em[i].innerHTML = i18next.t(target);
+      em[i].textContent = i18next.t(target);
     }
+    
+    let introTag = document.getElementById("introduction");
+    
+    while(introTag.firstChild){
+      introTag.removeChild(introTag.firstChild);
+    }
+    
+    
+    let firstLetterTag = document.createElement("span");
+    firstLetterTag.classList.add('introduction-first-letter')
 
-    document.getElementById("introduction").innerHTML = i18next.t("introduction");
+    let firstLetterContent = document.createTextNode(i18next.t("first-letter"));
+    firstLetterTag.appendChild(firstLetterContent);
+
+    let mainIntroContent = document.createTextNode(i18next.t("introduction"));
+    
+    introTag.appendChild(firstLetterTag);
+    introTag.appendChild(mainIntroContent);
 
     var subTitle = document.querySelectorAll(".sub-title");
     for(var i=0 ; i<subTitle.length ; i++){
       var target = "sub-title."+i;
-      subTitle[i].innerHTML = i18next.t(target);
+      subTitle[i].textContent = i18next.t(target);
     }
 
     var itemTitle = document.querySelectorAll(".works .item-title");
     for(var i=0 ; i<itemTitle.length ; i++){
       var target = "item."+i;
-      itemTitle[i].innerHTML = i18next.t(target);
+      itemTitle[i].textContent = i18next.t(target)
     }
 
     var currentLanguage = i18next.language.toString();
 
-    var topicTitleWeb = i18next.store.data[currentLanguage].translation["topic-title"].web;
-    var target = document.querySelectorAll(".topic-title.web");
-    for(var i=0 ; i<target.length ; i++){
-      target[i].innerHTML = topicTitleWeb;
-    }
     
-    var topicTitleSystem = i18next.store.data[currentLanguage].translation["topic-title"].system;
-    var target = document.querySelectorAll(".topic-title.system");
-    for(var i=0 ; i<target.length ; i++){
-      target[i].innerHTML = topicTitleSystem;
+    var topicTitle = i18next.store.data[currentLanguage].translation["topic-title"];
+    const keys = Object.keys(topicTitle);
+    const len = keys.length;
+    var target = document.querySelectorAll(".topic-title");
+    for(let i=0 ; i<len ; i++){
+      for(let j=0 ; j<len ; j++){
+        if(target[j].classList.contains(keys[i])){
+          target[j].textContent = topicTitle[keys[i]];
+          break;
+        }
+      }
     }
+    // const len = target.length;
+    // for(let i=0 ; i<len ; i++){
+    //   if(target.classList.contains())
+    // }
+    // target.textContent = topicTitle[]
+    // for(var i=0 ; i<target.length ; i++){
+    //   target[i].innerHTML = topicTitle;
+    // }
+    
+    // var topicTitleSystem = i18next.store.data[currentLanguage].translation["topic-title"];
+    // var target = document.querySelectorAll(".topic-title");
+    // for(var i=0 ; i<target.length ; i++){
+    //   target[i].innerHTML = topicTitleSystem;
+    // }
 
-    var ps = i18next.store.data[currentLanguage].translation["ps"]["triangle-notation"];
-    document.getElementById("ps").innerHTML = ps;
+    // var ps = i18next.store.data[currentLanguage].translation["ps"]["triangle-notation"];
+    // document.getElementById("ps").innerHTML = ps;
+    // console.log(ps);
     
 
   }
   catch(e){
+    console.log(e)
   }
   
 }
