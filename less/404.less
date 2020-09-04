@@ -1,43 +1,89 @@
+*{
+    margin:0;
+    padding:0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+
 body{
-	*{
-		margin:0;
-		padding:0;
-		-webkit-box-sizing: border-box;
-		-moz-box-sizing: border-box;
-		-o-box-sizing: border-box;
-		-ms-box-sizing: border-box;
-		box-sizing: border-box;
-    }
+    position: relative;
     background-color:#333;
     overflow:hidden;
 }
 
-section{
-    background-color:#333;
-    svg{
-        float:left;
-    }
-    h1{
-        font-family: 'Open Sans', sans-serif;
-    }
-    #not-found{
+.main-section{
+    width:100vw;
+    height:100vh;
+    #svg-logo{
         position: absolute;
-        top:-150px;
-        left:5%;
-        transform:rotate(-20deg);
-        font-size:650px;
-        float:right;
-        color:rgba(255,255,255,0.7);
-        z-index:-100;
-        
+        top:5vh;
+        left:5vw;
     }
-    #back-index{
-        float:left;
-        margin:50px 0 0 50px;
-        letter-spacing:1px;
-        color:rgba(255,255,255,0.8);
+    #http-status-404{
+        position: absolute;
+        top:5vh;
+        left:20vw;
+        transform:rotate(-20deg);
+        color:rgba(255,255,255,0.7);
+        font-size:650px;
+    }
+    #back-to-index{
+        position: absolute;
+        top:10vh;
+        left:23vw;
+        color:white;
+        font-size:30px;
         &:hover{
-            text-decoration: underline;
+            text-decoration:underline;
+        }
+    }
+}
+
+
+@media screen and (max-width:1024px){
+
+    .main-section{
+        #svg-logo{
+            transform: scale(0.5);
+            top:0vh;
+            left:0vw;
+        }
+        #http-status-404{
+            top:5vh;
+            left:20vw;
+            font-size:500px;
+        }
+        #back-to-index{
+            top:7vh;
+            left:20vw;
+            font-size:20px;
+        }
+    }
+}
+
+
+
+@media screen and (max-width:768px){
+
+    .main-section{
+        #svg-logo{
+            transform: scale(0.5);
+            top:0vh;
+            left:0vw;
+        }
+        #http-status-404{
+            top:15vh;
+            left:20vw;
+            font-size:150px;
+        }
+        #back-to-index{
+            top:7vh;
+            left:40vw;
+            font-size:16px;
         }
     }
 }
