@@ -25,9 +25,13 @@ i18next.init({
           "languages" : "程式語言經驗",
           "f2e": "前端框架經驗",
           "b2e": "後端、資料庫經驗",
+          "b2e-tools": "後端、資料庫工具經驗",
           "libs-tools": "程式庫、開發工具經驗",
+          "APIs-experience" : "APIs 串接經驗",
           "system" : "系統、平台經驗",
-          "concept": "技術觀念"
+          "concept": "技術觀念",
+          "web-based": "網頁作品",
+          "other": "桌面、網路應用、LeetCode",
         },
         "ps" : {
           "triangle-notation" : "&#9650; : 代表曾經學習過的語言技能，並使用其語言來做過作品的某一個部分，但沒有進一步深入學習其語言特性",
@@ -66,9 +70,13 @@ i18next.init({
           "languages" : "Languages",
           "f2e": " Front-End Frameworks",
           "b2e": "Back-End , DataBase",
+          "b2e-tools": "Back-End , DataBase Tools",
           "libs-tools": "Libs , Tools",
+          "APIs-experience" : "APIs Experience",
           "system" : "System , Platform",
-          "concept": "Technique Concept"
+          "concept": "Technique Concept",
+          "web-based": "Web Based",
+          "other": "Desktop , Networks , LeetCode",
         },
         "ps" : {
           "triangle-notation" : "&#9650; : means I have learn that skills and that skills have been used for develop the parts of my portfolio</br> , but I did not research further details about that after that time point.",
@@ -126,11 +134,11 @@ function updateContent(){
       subTitle[i].textContent = i18next.t(target);
     }
 
-    var itemTitle = document.querySelectorAll(".works .item-title");
-    for(var i=0 ; i<itemTitle.length ; i++){
-      var target = "item."+i;
-      itemTitle[i].textContent = i18next.t(target)
-    }
+    // var itemTitle = document.querySelectorAll(".works .item-title");
+    // for(var i=0 ; i<itemTitle.length ; i++){
+    //   var target = "item."+i;
+    //   itemTitle[i].textContent = i18next.t(target)
+    // }
 
     var currentLanguage = i18next.language.toString();
 
