@@ -55,11 +55,12 @@ let mode = (function(){
 // 		target = target.parentNode;
 // 		nodeName = target.tagName;
 // 		nodeId = target.id;
-// 	}
+// 	} 
 // }
 
 var search = (function(){
-	var apiKey = "AIzaSyAJJtlbiUYneQZQKDkF5SXz2qgClOJCxo4";
+	// var apiKey = "AIzaSyAJJtlbiUYneQZQKDkF5SXz2qgClOJCxo4";
+	var apiKey = "AIzaSyACz_f-mAoq8gLiiypp21LGX7uAdNmPhlo";
 	var state = "mostPopularVideoSearch";
 	var valve = false;
 	var atLastPage = false;
