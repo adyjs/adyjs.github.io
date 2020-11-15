@@ -7,48 +7,81 @@
 	<meta http-equiv="EXPIRES" content="0">
 	<meta http-equiv="CACHE-CONTROL" content="NO-CACHE">
 	<meta name="author" content="Adyjs" />
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&family=Noto+Sans+TC&display=swap" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/normalize.css">
 	<link rel="stylesheet" type="text/css" href="css/index.css">
-	<link rel="stylesheet" type="text/css" href="css/RWD_index.css">
 </head>
 <body>
-	<header>
-		<h1>排序演算法視覺化</h1>
-	</header>
+	<main class="main-container">
 
-	<section>
-		<article id="stage">
-			<img src="image/stage_back_img.png">
-		</article>
-
-		<article id="dashboard">
+		<section id="dashboard">
 			
-				<label id="algo_label" for="algo">排序演算法</label>
-					<select class="unset_value" id="algo">
-						<option value="none">--Algorithm--</option>
-						<option value="bubble_sort">Bubble Sort</option>
-						<option value="selection_sort">Selection Sort</option>
-						<option value="exchange_sort">Exchange Sort</option>
-					</select>
+				<div class="algo-selector-container">
+					<label class="algo-label" id="algo_label" for="algo">排序演算法</label>
+					<div class="selector-container">
+						<select class="selector" id="algo">
+							<option class="options" value="none" selected>--Algorithm--</option>
+							<option class="options" value="BubbleSort">Bubble Sort</option>
+							<option class="options" value="SelectionSort">Selection Sort</option>
+							<option class="options" value="ExchangeSort">Exchange Sort</option>
+							<option class="options" value="InsertionSort">Insertion Sort</option>
+							<option class="options" value="ShakerSort">Shaker Sort</option>
+						</select>
+					</div>
+				</div>
 				
-				<label id="count_label" for="count">計算數量</label>
-					<input id="count" type="number" disabled="true" ></input>
+				<div class="count-input-container">
+					<label class="count-label" id="count_label" for="count">計算數量</label>
+					<input 
+						class="count-input"
+						id="count" 
+						type="number" 
+						disabled="true" 
+						placeholder="5 ~ 300" 
+						min="5"
+						max="300">
+					</input>
+				</div>
 
-				<label id="mspf_label" for="mspf">ms per frame</label>
-					<input id="mspf" type="number" disabled="true"></input>
+				<div class="mspf-input-container">
+					<label class="mspf-label" id="mspf_label" for="mspf">ms per frame</label>
+					<input 
+						class="mspf-input"
+						id="mspf" 
+						type="number" 
+						disabled="true" 
+						placeholder="5ms ~ 1000ms"
+						min="5"
+						max="1000">
+					</input>
+				</div>
 
-				<label id="err" display="none"></label>
 			
-				<button id="prepare" disabled="true">產生圖像</button>
-				<button id="go" disabled="true">開始排序</button>
-				<button class="done_button" id="reset" >Reset</button>
-			
-		</article>
-	</section>
+				<button class="btn-tag" id="prepare" disabled="true">產生圖像</button>
+				<button class="btn-tag" id="go" disabled="true">開始排序</button>
+				<button class="btn-tag" class="done_button" id="reset" >Reset</button>
+				
+				<footer  class="footer-container">
+					<div class="footer-copyright" class="footer-content">&copy; 2020 Adyjs</div>
+				</footer>
+		</section>
 
-	<footer>
-		<h6>&copy; 2017 Adyjs.&nbsp;&nbsp;A self-taught Front-End Developer</h6>
-	</footer>
-	<script type="text/javascript" src="./js/index_refactor_2018.js"></script>
+		<section id="stage">
+            <div class="img-container">
+                <img class="initial-img" src="image/bg-img-1.svg">
+            </div>
+		</section>
+
+	</main>
+
+	
+
+	<script type="text/javascript" src="./js/main.js"></script>
+	<script type="text/javascript" src="./js/bubble_sort.js"></script>
+	<script type="text/javascript" src="./js/selection_sort.js"></script>
+	<script type="text/javascript" src="./js/exchange_sort.js"></script>
+	<script type="text/javascript" src="./js/insertion_sort.js"></script>
+	<script type="text/javascript" src="./js/shaker_sort.js"></script>
+	<script type="text/javascript" src="./js/test.js"></script>
 </body>
 </html>
