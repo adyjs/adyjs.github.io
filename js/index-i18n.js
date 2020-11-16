@@ -14,7 +14,7 @@ i18next.init({
           "1":"努力" , 
           "2":"專注"
         },
-        "introduction" : "是國泓，歡迎來到我的個人網頁。我自學軟體開發，從 2017 年開始學寫程式，寫過網頁前、後端，桌面應用程式，用過 GNU/Linux 、Library 及相關工具，我看到貴公司有相關的工作職務正在徵人，職務內容我也很有興趣，所以我投了履歷。希望能有面試及進一步了解公司的機會，謝謝。",
+        "introduction" : "是國泓，歡迎來到我的個人網頁。我自學軟體開發，從 2017 年開始學寫程式，寫過網頁前、後端，桌面應用程式，用過相關工具，具自學能力。近期，我看到貴公司有相關的工作職務正在徵人，職務內容我也很有興趣，所以我投了履歷。希望能有面試及進一步了解公司的機會，謝謝。",
         "first-letter" : "我",
         
         "sub-title" : {
@@ -25,7 +25,7 @@ i18next.init({
           "languages" : "程式語言經驗",
           "f2e": "前端框架經驗",
           "b2e": "後端、資料庫經驗",
-          "b2e-tools": "後端、資料庫工具經驗",
+          // "b2e-tools": "後端、資料庫工具經驗",
           "libs-tools": "程式庫、開發工具經驗",
           "APIs-experience" : "APIs 串接經驗",
           "system" : "系統、平台經驗",
@@ -60,7 +60,7 @@ i18next.init({
           "1":"diligent" , 
           "2":"focus"
         },
-        "introduction" : " am Adyjs , welcome to my home website. I am a self-taught developer , I started learn programming about 2017 , I had done some personal works in front-end , back-end , desktop , also had some experience in GNU/Linux , Libraries and Tools , I found some jobs position of your company are available now and I am also interesting on it and apply for it as well. Hope I could have an opportunity to be a interviewee of your company and can both know each other well, thank you.",
+        "introduction" : " am Adyjs , welcome to my home website. I am a self-taught developer , I started learn programming about 2017 , I had done some personal portfolio in front-end , back-end , desktop , also had some experience in other libraries and tools , I found some jobs position of your company are available now and I am also interesting on it and apply for it as well. Hope I could have an opportunity to be a interviewee of your company and can both know each other well, thank you.",
         "first-letter" : "I",
         "sub-title" : {
           "0" : "Programming Skills",
@@ -69,14 +69,14 @@ i18next.init({
         "topic-title" : {
           "languages" : "Languages",
           "f2e": " Front-End Frameworks",
-          "b2e": "Back-End , DataBase",
-          "b2e-tools": "Back-End , DataBase Tools",
-          "libs-tools": "Libs , Tools",
+          "b2e": "Back-End / Database",
+          // "b2e-tools": "Back-End , DataBase Tools",
+          "libs-tools": "Libs / Tools",
           "APIs-experience" : "APIs Experience",
-          "system" : "System , Platform",
+          "system" : "System / Platform",
           "concept": "Technique Concept",
           "web-based": "Web Based",
-          "other": "Desktop , Networks , LeetCode",
+          "other": "Desktop / Networks / LeetCode",
         },
         "ps" : {
           "triangle-notation" : "&#9650; : means I have learn that skills and that skills have been used for develop the parts of my portfolio</br> , but I did not research further details about that after that time point.",
