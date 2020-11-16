@@ -36,19 +36,26 @@ i18next.init({
         "ps" : {
           "triangle-notation" : "&#9650; : 代表曾經學習過的語言技能，並使用其語言來做過作品的某一個部分，但沒有進一步深入學習其語言特性",
         },
-        "item" : {
+        "APIs" : {
+          "0" : "G0V 健保口罩明細清單 API",
+          "1" : "YouTube 資料 API",
+          "2" : "Flickr API",
+          "3" : "IconFinder API",
+          "4" : "交通部大眾運輸 API",
+        },
+        "portfolio" : {
           "0" : "臺灣口罩資訊查詢列表",
           "1" : "Icon Hub",
-          "2" : "縮短網址服務應用",
+          "2" : "ShareURLs 服務應用",
           "3" : "台灣高鐵公開資訊",
           "4" : "YouTube-Too",
           "5" : "Flickr-Too",
           "6" : "排序演算法視覺化",
           // "5" : "YouTube-Too React 版",
-          "7" : "Qt 雜湊-驗證碼產生器",
-          "8" : "Raspberry-Pi Router 樹莓派路由器",
-          "9" : "Linux & C 開發練習",
-          "10" : "LeetCode 程式演算法練習",
+          "7" : "雜湊驗證程式 Qt 版",
+          "8" : "樹莓派路由器",
+          // "9" : "Linux & C 開發練習",
+          "9" : "LeetCode",
         },
       }
     },
@@ -81,10 +88,17 @@ i18next.init({
         "ps" : {
           "triangle-notation" : "&#9650; : means I have learn that skills and that skills have been used for develop the parts of my portfolio</br> , but I did not research further details about that after that time point.",
         },
-        "item" : {
+        "APIs" : {
+          "0" : "G0V Mask Info API",
+          "1" : "YouTube Data API",
+          "2" : "Flickr API",
+          "3" : "IconFinder API",
+          "4" : "MOTC Transport API",
+        },
+        "portfolio" : {
           "0" : "Mask Info TW",
           "1" : "Icon Hub",
-          "2" : "Share Shorten URLs Easier",
+          "2" : "ShareURLs",
           "3" : "THSR Public Info",
           "4" : "YouTube-Too",
           "5" : "Flickr-Too",
@@ -92,8 +106,8 @@ i18next.init({
           // "5" : "YouTube-Too React Version",
           "7" : "Checksum Machine on Qt",
           "8" : "Raspberry-Pi Router",
-          "9" : "Linux & C Development Practice",
-          "10" : "LeetCode Algorithm & Programming Practice",
+          // "9" : "Linux & C Development Practice",
+          "9" : "LeetCode",
         },
       }
     }
@@ -155,6 +169,27 @@ function updateContent(){
         }
       }
     }
+
+
+    /* API items translation */
+    const apiItemsContent = i18next.store.data[currentLanguage].translation["APIs"];
+    const apiItems = document.querySelectorAll(".api-item");
+    const apiItemLen = apiItems.length;
+    for(let i=0 ; i<apiItemLen ; i++){
+      apiItems[i].textContent = apiItemsContent[i];
+    }
+
+    /* Portfolio items translation */
+    const portfolioItemsContent = i18next.store.data[currentLanguage].translation["portfolio"];
+    const portfolio = document.querySelectorAll('.portfolio-name');
+    const portfolioLen = portfolio.length;
+    for(let i=0 ; i<portfolioLen ; i++){
+      portfolio[i].textContent = portfolioItemsContent[i];
+    }
+    // for(var i=0 ; i<apiItems.length ; i++){
+    //   var target = "sub-title."+i;
+    //   subTitle[i].textContent = i18next.t(target);
+    // }
     // const len = target.length;
     // for(let i=0 ; i<len ; i++){
     //   if(target.classList.contains())
