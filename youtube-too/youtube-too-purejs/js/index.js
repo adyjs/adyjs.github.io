@@ -60,7 +60,7 @@ let mode = (function(){
 
 var search = (function(){
 	// var apiKey = "AIzaSyAJJtlbiUYneQZQKDkF5SXz2qgClOJCxo4";
-	var apiKey = "AIzaSyACz_f-mAoq8gLiiypp21LGX7uAdNmPhlo";
+	var apiKey = "AIzaSyCRWJ34ZaWKcLmsH0byy7ENnYsgerfOl0s";
 	var state = "mostPopularVideoSearch";
 	var valve = false;
 	var atLastPage = false;

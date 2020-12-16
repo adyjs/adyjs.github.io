@@ -11,7 +11,7 @@ window.onload = function(){
 }
 
 var randomDisplay = (function(){
-	var apiKey = "f9dc6dc610bf82b7d82a1a2680f32d8e";
+	var apiKey = "07d8a70b974b2de4a33af5e7364bc377";
 	var perPage = 15;
 	var currentPage = "";
 	var initialUrl = "https://api.flickr.com/services/rest/?method=flickr.photos.search&nojsoncallback=1&format=json&api_key="+apiKey+"&per_page="+perPage;
@@ -102,7 +102,7 @@ var randomDisplay = (function(){
 })();
 
 var search = (function(){
-	var apiKey = "f9dc6dc610bf82b7d82a1a2680f32d8e";
+	var apiKey = "07d8a70b974b2de4a33af5e7364bc377";
 	var searchWord = null;
 	var perPage = 50;
 	var currentPage = "";
