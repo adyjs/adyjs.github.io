@@ -285,8 +285,7 @@ function playingVideoInfo(state){
 
 let keywordSearchActivate = (function(){
 	let reqParam = {
-		// apiKey : 'AIzaSyAJJtlbiUYneQZQKDkF5SXz2qgClOJCxo4',
-		apiKey : 'AIzaSyACz_f-mAoq8gLiiypp21LGX7uAdNmPhlo',
+		apiKey : e6bebbe30a44dd4164892b14aa7b498cde3(),
 		searchResource : 'https://www.googleapis.com/youtube/v3/search?',
 		searchPart : 'snippet',
 		videoEmbeddable : 'true',

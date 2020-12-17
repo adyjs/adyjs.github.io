@@ -59,8 +59,8 @@ let mode = (function(){
 // }
 
 var search = (function(){
-	// var apiKey = "AIzaSyAJJtlbiUYneQZQKDkF5SXz2qgClOJCxo4";
-	var apiKey = "AIzaSyCRWJ34ZaWKcLmsH0byy7ENnYsgerfOl0s";
+	
+	var apiKey = e6bebbe30a44dd4164892b14aa7b498cde3();
 	var state = "mostPopularVideoSearch";
 	var valve = false;
 	var atLastPage = false;
