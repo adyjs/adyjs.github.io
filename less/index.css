@@ -216,7 +216,7 @@ header .slogan .slogan-element {
   background-image: url("../image/sorting-algorithm-visualization-bg.png");
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 100% 80%;
+  background-size: 100% 100%;
 }
 #main-content .portfolio-box .portfolio-anchor #qt-checksum-app {
   background-image: url("../image/checksum-machine.png");

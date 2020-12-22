@@ -73,7 +73,7 @@
   }
   #main-content .portfolio-box .portfolio-anchor #sorting {
     background-position: top center;
-    background-size: 50%;
+    background-size: 100% 100%;
   }
   #main-content .portfolio-box .portfolio-anchor #qt-checksum-app {
     background-position: top center;
